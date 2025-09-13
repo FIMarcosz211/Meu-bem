@@ -98,4 +98,18 @@
     Você é meu maior presente. Obrigado por existir, meu amor ❤️
   </footer>
 </body>
+<!-- Botão para tocar áudio -->
+<button onclick="playAudio()" style="padding:10px 20px; border:none; border-radius:10px; background:#fd002e; color:white; font-size:16px; cursor:pointer; margin-top:20px;">
+   🎶 Tocar mensagem ❤️
+</button>
+
+<!-- Elemento de áudio escondido -->
+<audio id="mensagem.mp3" src="mensagem.mp3"></audio>
+
+<script>
+  function playAudio() {
+    const audio = document.getElementById("mensagem.mp3");
+    audio.play();
+  }
+</script>
 </html>
